@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+  }
+body{
+    font-family: "Lato", sans-serif;
+    color: #ffd868;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.nav{
+    background:  #272727;
+    width: 100%;
+    padding: 20px 0px;
+    height: 45px;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background: url("./weather.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#wind{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.h6{
+    font-size: 15px;
+    padding: 6px 0px;
+}
+.date-time{
+    font-size: 11px;
+    opacity: 0.9;
+    padding: 10px 0px;
+}
+.input_buttom_img{
+    background-color: #6c4a3a9e;
+    border-radius: 35px;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+}
+#nav-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#search {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+    width: 25rem;
+    text-align: center;
+    height: 45px;;
+}
+.icon-search{
+    position: absolute;
+    display: block;
+    margin: 21px 15px;
+}
+
+
+date and time
+
+
+.display-date {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.display-time {
+  display: flex;
+  font-size: 5rem;
+  font-weight: bold;
+  border: 2px solid #ffd868;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.1s;
+  transition-property: background, box-shadow, color;
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+}
+
+.display-time:hover {
+  background: #ffd868;
+  box-shadow: 0 0 30px#ffd868;
+  color: #272727;
+  cursor: pointer;
+}
